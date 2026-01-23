@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/fonts/(.*)",
+      "source": "/fonts/:path*",
       "headers": [
         {
           "key": "Cache-Control",
@@ -10,7 +10,7 @@
       ]
     },
     {
-      "source": "/(.*\\.(png|jpg|jpeg|webp|gif|svg|ico))",
+      "source": "/:path*\\.(png|jpg|jpeg|webp|gif|svg|ico)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -19,7 +19,7 @@
       ]
     },
     {
-      "source": "/(.*)",
+      "source": "/:path*",
       "headers": [
         {
           "key": "X-Content-Type-Options",
