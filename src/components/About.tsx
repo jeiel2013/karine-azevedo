@@ -14,6 +14,7 @@ export default function About() {
             <div className="w-full max-w-[400px] aspect-square rounded-full overflow-hidden border-2 border-[var(--color-brand-nude)] p-2">
               <img
                 src={FotoKarine}
+                loading="lazy"
                 alt="Karine Azevedo"
                 className="w-full h-full object-cover rounded-full"
               />
