@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import FotoKarine2 from "../assets/FotoKarine2.webp";
+import FotoKarine2 from "../../public/FotoKarine2.webp";
 
 export default function Hero() {
   return (
