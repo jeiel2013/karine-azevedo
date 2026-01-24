@@ -73,7 +73,7 @@ export default function About() {
               >
                 <Icon
                   icon="entypo-social:instagram"
-                  className="text-[var(--color-brand-terracotta)] hover:text-[var(--color-brand-terracottaDark)] transition-colors"
+                  className="text-[var(--color-brand-brownDark)] transition-colors"
                   width="32"
                 />
               </a>

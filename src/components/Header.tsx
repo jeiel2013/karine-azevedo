@@ -20,25 +20,25 @@ export default function Header() {
         <nav className="hidden lg:flex items-center gap-8">
           <a
             href="#sobre"
-            className="text-sm font-light text-[var(--color-brand-brownDark)] hover:text-[var(--color-brand-terracotta)] transition-colors tracking-wide"
+            className="text-sm font-light text-[var(--color-brand-brownDark)] hover:text-[var(--color-brand-brownDark)] transition-colors tracking-wide"
           >
             Sobre Mim
           </a>
           <a
             href="#estilo"
-            className="text-sm font-light text-[var(--color-brand-brownDark)] hover:text-[var(--color-brand-terracotta)] transition-colors tracking-wide"
+            className="text-sm font-light text-[var(--color-brand-brownDark)] hover:text-[var(--color-brand-brownDark)] transition-colors tracking-wide"
           >
             Portfolio
           </a>
           <a
             href="#depoimentos"
-            className="text-sm font-light text-[var(--color-brand-brownDark)] hover:text-[var(--color-brand-terracotta)] transition-colors tracking-wide"
+            className="text-sm font-light text-[var(--color-brand-brownDark)] hover:text-[var(--color-brand-brownDark)] transition-colors tracking-wide"
           >
             Depoimentos
           </a>
           <a
             href="https://wa.me/5533987079816?text=Ol%C3%A1%20Karine!%20Quero%20conhecer%20mais%20seu%20trabalho%20e%20seu%20or%C3%A7amento%20de%20ensaios!"
-            className="bg-[var(--color-brand-terracotta)] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[var(--color-brand-terracottaDark)] transition-colors shadow-sm"
+            className="bg-[var(--color-brand-terracotta)] text-(--color-brand-brownDark) px-6 py-2 rounded-full text-sm font-medium hover:bg-[var(--color-brand-brownDark)] hover:text-white transition-colors shadow-sm"
           >
             Agendar Ensaio
           </a>

@@ -33,9 +33,9 @@ export default function Services() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="fade-in-section bg-[var(--color-brand-light)] p-8 rounded-lg border border-[var(--color-brand-bg)] hover:border-[var(--color-brand-terracotta)]/30 transition-colors"
+              className="fade-in-section bg-[var(--color-brand-light)] p-8 rounded-lg border border-[var(--color-brand-bg)] hover:border-[var(--color-brand-brownDark)]/30 transition-colors"
             >
-              <div className="w-12 h-12 flex items-center justify-center text-[var(--color-brand-terracotta)] mb-6">
+              <div className="w-12 h-12 flex items-center justify-center text-[var(--color-brand-brownDark)] mb-6">
                 <Icon icon={service.icon} width="40" />
               </div>
               <h3 className="text-xl text-[var(--color-brand-brownDark)] font-medium mb-4">

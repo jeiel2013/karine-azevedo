@@ -1,5 +1,3 @@
-import { Icon } from "@iconify/react";
-
 export default function Testimonials() {
   const testimonials = [
     {
@@ -32,7 +30,7 @@ export default function Testimonials() {
           <h2 className="font-serif text-3xl md:text-4xl text-[var(--color-brand-brownDark)] mb-4 tracking-tight font-medium">
             O Que Dizem
           </h2>
-          <p className="text-[var(--color-brand-brownRed)] font-light max-w-2xl mx-auto">
+          <p className="text-[var(--color-brand-brownDark)] font-light max-w-2xl mx-auto">
             Depoimentos de quem confiou em mim para eternizar suas histórias.
           </p>
         </div>
@@ -44,19 +42,14 @@ export default function Testimonials() {
               key={index}
               className="fade-in-section p-6 md:p-8 lg:p-10 bg-white border border-[var(--color-brand-terracotta)]/10 rounded-2xl shadow-md hover:shadow-lg transition-shadow flex flex-col"
             >
-              {/* Quote Icon */}
-              <div className="w-12 h-12 flex items-center justify-center text-[var(--color-brand-terracotta)] mb-6">
-                <Icon icon="solar:quote-up-square-linear" width="40" />
-              </div>
-
               {/* Quote Text */}
-              <p className="text-sm md:text-base text-[var(--color-brand-brownRed)] font-light leading-relaxed mb-6 flex-grow">
+              <p className="text-sm md:text-base text-[var(--color-brand-brownDark)] font-light leading-relaxed mb-6 flex-grow">
                 "{testimonial.quote}"
               </p>
 
               {/* Author */}
               <div className="flex items-center gap-3 mt-auto pt-4 border-t border-[var(--color-brand-terracotta)]/10">
-                <div className="w-8 h-px bg-[var(--color-brand-terracotta)]"></div>
+                <div className="w-8 h-px bg-[var(--color-brand-brownDark)]"></div>
                 <span className="font-serif text-[var(--color-brand-brownDark)] font-medium text-base">
                   {testimonial.author}
                 </span>

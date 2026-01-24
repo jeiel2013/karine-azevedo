@@ -59,7 +59,7 @@ export default function Hero() {
               <br />
               <span className="italic font-light">Histórias Reais</span>
             </h1>
-            <p className="font-serif text-2xl text-[var(--color-brand-brownDark)] italic tracking-wide">
+            <p className="font-serif text-2xl text-[var(--color-brand-brownRed)] italic tracking-wide">
               Karine Azevedo
             </p>
           </div>
@@ -71,7 +71,7 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-4 pb-8 sm:pb-0">
             <a
               href="#sobre"
-              className="group flex items-center justify-center gap-2 bg-[var(--color-brand-terracotta)] text-white px-8 py-3.5 rounded-sm hover:bg-[var(--color-brand-terracottaDark)] transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
+              className="group flex items-center justify-center gap-2 bg-[var(--color-brand-terracotta)] text-(--color-brand-brownDark) px-8 py-3.5 rounded-sm hover:bg-[var(--color-brand-brownDark)] hover:text-white transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
             >
               <span className="font-medium tracking-wide text-sm">
                 Conhecer Trabalho
@@ -86,7 +86,7 @@ export default function Hero() {
               href="https://wa.me/5533987079816?text=Ol%C3%A1%20Karine!%20Quero%20conhecer%20mais%20seu%20trabalho%20e%20seu%20or%C3%A7amento%20de%20ensaios!"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center gap-2 border border-[var(--color-brand-terracotta)] text-[var(--color-brand-terracotta)] px-8 py-3.5 rounded-sm hover:bg-[var(--color-brand-terracotta)] hover:text-white transition-all duration-300 w-full sm:w-auto"
+              className="group flex items-center justify-center gap-2 border border-[var(--color-brand-brownDark)] text-[var(--color-brand-brownDark)] px-8 py-3.5 rounded-sm hover:bg-[var(--color-brand-brownDark)] hover:text-white transition-all duration-300 w-full sm:w-auto"
             >
               <Icon icon="solar:chat-round-line-linear" width="20" />
               <span className="font-medium tracking-wide text-sm">

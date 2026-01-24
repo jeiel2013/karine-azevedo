@@ -18,7 +18,7 @@ export default function Footer() {
           href="https://wa.me/5555339870798?text=Ol%C3%A1%20Karine!%20Quero%20agendar%20um%20ensaio%20com%20voc%C3%AA!"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-3 bg-[var(--color-brand-terracotta)] text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-[var(--color-brand-terracottaDark)] transition-all hover:scale-105 shadow-xl hover:shadow-2xl"
+          className="inline-flex items-center gap-3 bg-[var(--color-brand-terracotta)] text-(--color-brand-brownDark) px-10 py-5 rounded-full text-lg font-medium transition-all hover:scale-105 shadow-xl hover:shadow-2xl"
         >
           <Icon icon="solar:chat-round-dots-linear" width="24" />
           Agendar Meu Ensaio no WhatsApp
