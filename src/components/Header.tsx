@@ -71,13 +71,6 @@ export default function Header() {
             Portfolio
           </a>
           <a
-            href="#howitwork"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-[var(--color-brand-brownDark)] py-2 border-b border-[var(--color-brand-brownDark)]/5"
-          >
-            Como Funciona?
-          </a>
-          <a
             href="#depoimentos"
             onClick={() => setMobileMenuOpen(false)}
             className="text-[var(--color-brand-brownDark)] py-2 border-b border-[var(--color-brand-brownDark)]/5"
