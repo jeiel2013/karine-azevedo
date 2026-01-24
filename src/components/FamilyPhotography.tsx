@@ -1,9 +1,9 @@
+import Familiar1 from "../../public/Familiar1.png";
+import Familiar2 from "../../public/Familiar2.png";
+import Familiar3 from "../../public/Familiar3.png";
+
 export default function FamilyPhotography() {
-  const images = [
-    "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/30104e3c-5eea-4b93-93e9-5313698a7156_1600w.webp",
-    "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/917d6f93-fb36-439a-8c48-884b67b35381_1600w.jpg",
-    "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c543a9e1-f226-4ced-80b0-feb8445a75b9_1600w.jpg",
-  ];
+  const images = [Familiar2, Familiar1, Familiar3];
 
   return (
     <section id="familia" className="py-24 bg-white">

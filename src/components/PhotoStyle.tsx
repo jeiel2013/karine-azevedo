@@ -1,10 +1,10 @@
+import Estilo1 from "../../public/Estilo1.png";
+import Estilo2 from "../../public/Estilo2.png";
+import Estilo3 from "../../public/Estilo3.png";
+import Estilo4 from "../../public/Estilo4.png";
+
 export default function PhotoStyle() {
-  const images = [
-    "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c543a9e1-f226-4ced-80b0-feb8445a75b9_1600w.jpg",
-    "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/5bab247f-35d9-400d-a82b-fd87cfe913d2_1600w.webp",
-  ];
+  const images = [Estilo1, Estilo3, Estilo2, Estilo4];
 
   return (
     <section id="estilo" className="py-24 bg-with-pattern">

@@ -1,9 +1,9 @@
+import Individual1 from "../../public/Individual1.png";
+import Individual2 from "../../public/Individual2.png";
+import Individual3 from "../../public/Individual3.png";
+
 export default function IndividualPhotography() {
-  const images = [
-    "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/5bab247f-35d9-400d-a82b-fd87cfe913d2_1600w.webp",
-    "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/4734259a-bad7-422f-981e-ce01e79184f2_1600w.jpg",
-    "https://hoirqrkdgbmvpwutwuwj.supabase.co/storage/v1/object/public/assets/assets/c543a9e1-f226-4ced-80b0-feb8445a75b9_1600w.jpg",
-  ];
+  const images = [Individual1, Individual2, Individual3];
 
   return (
     <section className="py-24 bg-with-pattern-nude">
