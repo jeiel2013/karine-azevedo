@@ -1,9 +1,5 @@
-import Individual1 from "../../public/Individual1.png";
-import Individual2 from "../../public/Individual2.png";
-import Individual3 from "../../public/Individual3.png";
-
 export default function IndividualPhotography() {
-  const images = [Individual1, Individual2, Individual3];
+  const images = ["/Individual1.png", "/Individual2.png", "/Individual3.png"];
 
   return (
     <section className="py-24 bg-with-pattern-nude">

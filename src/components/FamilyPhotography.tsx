@@ -1,9 +1,5 @@
-import Familiar1 from "../../public/Familiar1.png";
-import Familiar2 from "../../public/Familiar2.png";
-import Familiar3 from "../../public/Familiar3.png";
-
 export default function FamilyPhotography() {
-  const images = [Familiar2, Familiar1, Familiar3];
+  const images = ["/Familiar2.png", "/Familiar1.png", "/Familiar3.png"];
 
   return (
     <section id="familia" className="py-24 bg-white">

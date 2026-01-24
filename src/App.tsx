@@ -6,7 +6,6 @@ import PhotoStyle from "./components/PhotoStyle";
 import FamilyPhotography from "./components/FamilyPhotography";
 import IndividualPhotography from "./components/IndividualPhotography";
 import Services from "./components/Services";
-import HowItWorks from "./components/HowItWorks";
 import Testimonials from "./components/Testimonials";
 import Footer from "./components/Footer";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
@@ -44,7 +43,6 @@ function App() {
       <FamilyPhotography />
       <IndividualPhotography />
       <Services />
-      <HowItWorks />
       <Testimonials />
       <Footer />
       <FloatingWhatsApp />

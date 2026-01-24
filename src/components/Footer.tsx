@@ -15,7 +15,7 @@ export default function Footer() {
         </h2>
 
         <a
-          href="https://wa.me/5511999999999?text=Olá! Gostaria de agendar um ensaio fotográfico"
+          href="https://wa.me/5555339870798?text=Ol%C3%A1%20Karine!%20Quero%20agendar%20um%20ensaio%20com%20voc%C3%AA!"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-[var(--color-brand-terracotta)] text-white px-10 py-5 rounded-full text-lg font-medium hover:bg-[var(--color-brand-terracottaDark)] transition-all hover:scale-105 shadow-xl hover:shadow-2xl"
@@ -26,7 +26,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center gap-4 text-[var(--color-brand-nude)]">
           <a
-            href="#"
+            href="https://instagram.com/karineazevedofotografia"
             className="flex items-center gap-2 hover:text-white transition-colors"
           >
             <Icon icon="solar:camera-linear" width="20" />

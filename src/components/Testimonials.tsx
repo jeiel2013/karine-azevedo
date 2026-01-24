@@ -4,46 +4,58 @@ export default function Testimonials() {
   const testimonials = [
     {
       quote:
-        "A Karine tem um olhar sensível e único. As fotos ficaram maravilhosas e capturaram exatamente a nossa essência.",
-      author: "Ana Clara",
+        "Kaka ja vi essas fotos várias vezes, minha vontade é de curtir 74 mil vezes, que perfeito cara, parabens pelo seu trabalho e seu carinho e amor em fazê-lo, sem duvidas você é muito abençoada, apaixonada estou.",
+      author: "Angélica Marília",
     },
     {
       quote:
-        "Foi uma experiência incrível. Me senti super à vontade e o resultado emocionou toda a família. Recomendo demais!",
-      author: "Mariana S.",
+        "Ai Karine amamos tanto as fotos, na verdade não são apenas fotos, são registros de uma longa história com diversos pontos significativo como a casa na roça, a bicicleta... Muito mas muito obrigada por fazer parte de tudo isso, meus irmãos estão encantadooooos, e eu mais ainda meus parabéns, você faz um excelente trabalho",
+      author: "Wellica Viana",
     },
     {
       quote:
-        "Profissionalismo impecável e uma delicadeza sem igual. O álbum ficou perfeito, uma memória para a vida toda.",
-      author: "Juliana Costa",
+        "Foi um privilégio pra todos nós termos a sua companhia, com seu trabalho incrivel, te desejamos o maior sucesso do mundo, amamos a sua presença, tanto nós como meus avós que ficaram tranquilos e sem receio das fotos com a sua capacidade de os deixar a vontade.",
+      author: "Maria Eduarda C.",
     },
     {
       quote:
-        "Registros que vou guardar para sempre. Obrigada por eternizar esse momento com tanto carinho e sensibilidade.",
-      author: "Fernanda Lima",
+        "Que ensaio mais lindo! O seu profissionalismo e competência, vão além das lentes ! Que dom maravilhoso que Deus te deu, que ele continue te abençoando com muitos outros 'retratos e paisagens' maravilhosos, como os que vc tem feito!",
+      author: "Meire Rodrigues",
     },
   ];
 
   return (
-    <section id="depoimentos" className="py-24 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
-        <h2 className="font-serif text-4xl text-center text-[var(--color-brand-brownDark)] mb-16 tracking-tight font-medium fade-in-section">
-          O Que Dizem
-        </h2>
+    <section id="depoimentos" className="py-24 bg-with-pattern-nude">
+      <div className="max-w-7xl mx-auto px-6">
+        {/* Header */}
+        <div className="max-w-4xl mx-auto text-center mb-16 fade-in-section">
+          <h2 className="font-serif text-3xl md:text-4xl text-[var(--color-brand-brownDark)] mb-4 tracking-tight font-medium">
+            O Que Dizem
+          </h2>
+          <p className="text-[var(--color-brand-brownRed)] font-light max-w-2xl mx-auto">
+            Depoimentos de quem confiou em mim para eternizar suas histórias.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+        {/* Testimonials Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="fade-in-section bg-[var(--color-brand-light)] p-8 rounded-lg border border-[var(--color-brand-bg)] hover:border-[var(--color-brand-terracotta)]/30 transition-colors flex flex-col"
+              className="fade-in-section p-6 md:p-8 lg:p-10 bg-white border border-[var(--color-brand-terracotta)]/10 rounded-2xl shadow-md hover:shadow-lg transition-shadow flex flex-col"
             >
+              {/* Quote Icon */}
               <div className="w-12 h-12 flex items-center justify-center text-[var(--color-brand-terracotta)] mb-6">
                 <Icon icon="solar:quote-up-square-linear" width="40" />
               </div>
-              <p className="text-[var(--color-brand-brownRed)] font-light leading-relaxed text-base mb-6 flex-grow">
+
+              {/* Quote Text */}
+              <p className="text-sm md:text-base text-[var(--color-brand-brownRed)] font-light leading-relaxed mb-6 flex-grow">
                 "{testimonial.quote}"
               </p>
-              <div className="flex items-center gap-3">
+
+              {/* Author */}
+              <div className="flex items-center gap-3 mt-auto pt-4 border-t border-[var(--color-brand-terracotta)]/10">
                 <div className="w-8 h-px bg-[var(--color-brand-terracotta)]"></div>
                 <span className="font-serif text-[var(--color-brand-brownDark)] font-medium text-base">
                   {testimonial.author}

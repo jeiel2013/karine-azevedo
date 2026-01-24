@@ -1,19 +1,65 @@
 import { Icon } from "@iconify/react";
-import FotoKarine2 from "../../public/FotoKarine2.webp";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-20 overflow-hidden bg-with-pattern-hero">
-      <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        {/* Left Column */}
-        <div className="fade-in-section flex flex-col items-start gap-8 z-10 order-2 lg:order-1">
+    <section
+      id="hero"
+      className="relative min-h-screen flex items-center pt-20 pb-8 overflow-hidden bg-gradient-to-b from-[var(--color-brand-bg)] to-[var(--color-brand-nude)]/30"
+    >
+      {/* Background Image - Mobile */}
+      <div className="absolute inset-0 h-[115vh] z-0 md:hidden overflow-hidden">
+        <img
+          src="/Hero1.jpg"
+          alt="Background"
+          className="absolute w-full h-full object-cover object-[center_90%]"
+        />
+        {/* Overlay Mobile - gradiente bem à esquerda */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-brand-bg)]/92 from-10% via-[var(--color-brand-bg)]/50 via-25% to-transparent"></div>
+      </div>
+
+      {/* Background Image - Tablet (768px - 1023px) */}
+      <div className="absolute inset-0 z-0 hidden md:block lg:hidden overflow-hidden h-[110%]">
+        <img
+          src="/Hero1.jpg"
+          alt="Background"
+          className="absolute w-full h-full object-cover object-[30%_75%]"
+        />
+        {/* Overlay Tablet */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-brand-bg)]/95 from-5% via-[var(--color-brand-bg)]/65 via-15% to-transparent" />
+      </div>
+
+      {/* Background Image - 1024x768 / 1366x768 landscape */}
+      <div className="absolute inset-y-0 right-[-35%] z-0 hidden lg:block xl:hidden overflow-hidden w-[135%]">
+        <img
+          src="/Hero1.jpg"
+          alt="Background"
+          className="absolute inset-0 w-full h-full object-cover object-[85%_90%]"
+        />
+        {/* Overlay para 1366x768 */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-brand-bg)]/70 from-16% via-[var(--color-brand-bg)]/40 via-28% to-transparent" />
+      </div>
+
+      {/* Background Image - Desktop (>1400px) */}
+      <div className="absolute inset-0 z-0 hidden xl:block overflow-hidden">
+        <img
+          src="/Hero1.jpg"
+          alt="Background"
+          className="absolute min-w-full min-h-full w-auto h-auto left-[20%] top-[-10%] -translate-y-1/2"
+        />
+        {/* Overlay Desktop */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-brand-bg)]/95 from-20% via-[var(--color-brand-bg)]/65 via-30% to-transparent"></div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+        {/* Left Column - Text Content */}
+        <div className="fade-in-section flex flex-col items-start gap-8">
           <div className="space-y-2">
             <h1 className="font-serif text-5xl md:text-7xl leading-[1.1] text-[var(--color-brand-brownDark)] tracking-tight font-medium">
               Fotografando
               <br />
               <span className="italic font-light">Histórias Reais</span>
             </h1>
-            <p className="font-serif text-2xl text-[var(--color-brand-terracotta)] italic tracking-wide">
+            <p className="font-serif text-2xl text-[var(--color-brand-brownDark)] italic tracking-wide">
               Karine Azevedo
             </p>
           </div>
@@ -37,7 +83,7 @@ export default function Hero() {
               />
             </a>
             <a
-              href="https://wa.me/5511999999999"
+              href="https://wa.me/5533987079816?text=Ol%C3%A1%20Karine!%20Quero%20conhecer%20mais%20seu%20trabalho%20e%20seu%20or%C3%A7amento%20de%20ensaios!"
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center justify-center gap-2 border border-[var(--color-brand-terracotta)] text-[var(--color-brand-terracotta)] px-8 py-3.5 rounded-sm hover:bg-[var(--color-brand-terracotta)] hover:text-white transition-all duration-300 w-full sm:w-auto"
@@ -50,21 +96,8 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Right Column */}
-        <div className="relative h-[50vh] lg:h-[80vh] w-full order-1 lg:order-2 fade-in-section">
-          {/* Decorative Circles */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] aspect-square rounded-full border border-[var(--color-brand-brownDark)]/10"></div>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] aspect-square rounded-full border border-[var(--color-brand-terracotta)]/20"></div>
-
-          {/* Main Image */}
-          <div className="absolute inset-4 lg:inset-10 rounded-t-full overflow-hidden shadow-2xl">
-            <img
-              src={FotoKarine2}
-              alt="Fotografia Hero"
-              className="w-full h-full object-cover object-top md:object-[center_20%] lg:object-center hover:scale-105 transition-transform duration-700 hero-image-1366"
-            />
-          </div>
-        </div>
+        {/* Right Column - Empty space for image to show through */}
+        <div className="hidden lg:block"></div>
       </div>
     </section>
   );

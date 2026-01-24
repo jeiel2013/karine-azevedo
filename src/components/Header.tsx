@@ -28,13 +28,7 @@ export default function Header() {
             href="#estilo"
             className="text-sm font-light text-[var(--color-brand-brownDark)] hover:text-[var(--color-brand-terracotta)] transition-colors tracking-wide"
           >
-            Estilo
-          </a>
-          <a
-            href="#howitwork"
-            className="text-sm font-light text-[var(--color-brand-brownDark)] hover:text-[var(--color-brand-terracotta)] transition-colors tracking-wide"
-          >
-            Como Funciona?
+            Portfolio
           </a>
           <a
             href="#depoimentos"
@@ -43,7 +37,7 @@ export default function Header() {
             Depoimentos
           </a>
           <a
-            href="#contato"
+            href="https://wa.me/5533987079816?text=Ol%C3%A1%20Karine!%20Quero%20conhecer%20mais%20seu%20trabalho%20e%20seu%20or%C3%A7amento%20de%20ensaios!"
             className="bg-[var(--color-brand-terracotta)] text-white px-6 py-2 rounded-full text-sm font-medium hover:bg-[var(--color-brand-terracottaDark)] transition-colors shadow-sm"
           >
             Agendar Ensaio
@@ -74,7 +68,7 @@ export default function Header() {
             onClick={() => setMobileMenuOpen(false)}
             className="text-[var(--color-brand-brownDark)] py-2 border-b border-[var(--color-brand-brownDark)]/5"
           >
-            Estilo Fotográfico
+            Portfolio
           </a>
           <a
             href="#howitwork"
@@ -91,10 +85,10 @@ export default function Header() {
             Depoimentos
           </a>
           <a
-            href="https://wa.me/5511999999999"
+            href="https://wa.me/5533987079816?text=Ol%C3%A1%20Karine!%20Quero%20conhecer%20mais%20seu%20trabalho%20e%20seu%20or%C3%A7amento%20de%20ensaios!"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--color-brand-terracotta)] font-medium py-2"
+            className="text-[var(--color-brand-terracottaDark)] font-medium py-2"
           >
             Agendar Agora
           </a>
