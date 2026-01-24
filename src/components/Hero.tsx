@@ -54,23 +54,17 @@ export default function Hero() {
         {/* Left Column - Text Content */}
         <div className="fade-in-section flex flex-col items-start gap-8">
           <div className="space-y-2">
-            <h1 className="font-serif text-5xl md:text-7xl leading-[1.1] text-[var(--color-brand-brownDark)] tracking-tight font-medium">
-              Fotografando
-              <br />
-              <span className="italic font-light">Histórias Reais</span>
+            <h1 className="font-serif text-6xl md:text-7xl leading-[1.1] text-[var(--color-brand-brownDark)] tracking-tight font-medium md:whitespace-nowrap">
+              Fotografando{" "} Histórias Reais
+              {/* <span className="italic font-light">Histórias Reais</span> */}
             </h1>
-            <p className="font-serif text-2xl text-[var(--color-brand-brownRed)] italic tracking-wide">
-              Karine Azevedo
-            </p>
           </div>
-
-          <p className="text-lg md:text-xl font-light text-[var(--color-brand-brownRed)] max-w-md leading-relaxed">
+          <p className="text-12px md:text-lg font-light text-[var(--color-brand-brownRed)] max-w-md leading-relaxed">
             Registros que despertam sentimento e se transformam em memória viva.
           </p>
-
           <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto pt-4 pb-8 sm:pb-0">
             <a
-              href="#sobre"
+              href="#estilo"
               className="group flex items-center justify-center gap-2 bg-[var(--color-brand-terracotta)] text-(--color-brand-brownDark) px-8 py-3.5 rounded-sm hover:bg-[var(--color-brand-brownDark)] hover:text-white transition-all duration-300 shadow-md hover:shadow-lg w-full sm:w-auto"
             >
               <span className="font-medium tracking-wide text-sm">
@@ -82,7 +76,7 @@ export default function Hero() {
                 className="group-hover:translate-x-1 transition-transform"
               />
             </a>
-            <a
+            {/* <a
               href="https://wa.me/5533987079816?text=Ol%C3%A1%20Karine!%20Quero%20conhecer%20mais%20seu%20trabalho%20e%20seu%20or%C3%A7amento%20de%20ensaios!"
               target="_blank"
               rel="noopener noreferrer"
@@ -92,7 +86,7 @@ export default function Hero() {
               <span className="font-medium tracking-wide text-sm">
                 Falar no WhatsApp
               </span>
-            </a>
+            </a> */}
           </div>
         </div>
 

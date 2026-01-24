@@ -28,11 +28,8 @@ export default function Testimonials() {
         {/* Header */}
         <div className="max-w-4xl mx-auto text-center mb-16 fade-in-section">
           <h2 className="font-serif text-3xl md:text-4xl text-[var(--color-brand-brownDark)] mb-4 tracking-tight font-medium">
-            O Que Dizem
+            Feedbacks
           </h2>
-          <p className="text-[var(--color-brand-brownDark)] font-light max-w-2xl mx-auto">
-            Depoimentos de quem confiou em mim para eternizar suas histórias.
-          </p>
         </div>
 
         {/* Testimonials Grid */}

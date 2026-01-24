@@ -29,8 +29,8 @@ export default function About() {
 
           {/* Content */}
           <div className="fade-in-section space-y-6 text-center lg:text-left">
-            <span className="text-xs font-semibold tracking-widest text-[var(--color-brand-terracotta)] uppercase">
-              Quem sou eu?
+            <span className="text-xs font-semibold tracking-widest text--color-brand-brownDark uppercase">
+              Sobre mim
             </span>
             <h2 className="font-serif text-4xl lg:text-5xl text-[var(--color-brand-brownDark)] tracking-tight font-medium">
               Oii, sou Karine Azevedo

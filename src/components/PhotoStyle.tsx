@@ -1,43 +1,53 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Icon } from "@iconify/react";
 
 export default function PhotoStyle() {
   const images = [
-    "/Portfolio1.jpg",
-    "/Portfolio2.jpg",
-    "/Portfolio3.jpg",
-    "/Portfolio4.jpg",
-    "/Portfolio5.jpg",
-    "/Portfolio6.jpg",
-    "/Portfolio7.jpg",
-    "/Portfolio8.jpg",
-    "/Portfolio9.jpg",
-    "/Portfolio10.jpg",
-    "/Portfolio11.jpg",
-    "/Portfolio12.jpg",
-    "/Portfolio13.jpg",
-    "/Portfolio14.jpg",
-    "/Portfolio15.jpg",
-    "/Portfolio16.jpg",
-    "/Portfolio17.jpg",
+    "/PortfolioA1.jpg",
+    "/PortfolioA2.jpg",
+    "/PortfolioA3.jpg",
+    "/PortfolioB1.jpg",
+    "/PortfolioB2.jpg",
+    "/PortfolioB3.jpg",
+    "/PortfolioC1.jpg",
+    "/PortfolioC2.jpg",
+    "/PortfolioC3.jpg",
+    "/PortfolioD1.jpg",
+    "/PortfolioD2.jpg",
+    "/PortfolioD3.jpg",
+    "/PortfolioE1.jpg",
+    "/PortfolioE2.jpg",
+    "/PortfolioE3.jpg",
+    "/PortfolioF1.jpg",
+    "/PortfolioF2.jpg",
+    "/PortfolioF3.jpg",
+    "/PortfolioG1.png",
+    "/PortfolioG2.png",
+    "/PortfolioG3.png",
   ];
 
-  const scrollContainerRef = useRef<HTMLDivElement>(null);
+  const scrollContainers = useRef<{ [key: number]: HTMLDivElement | null }>({});
+  const [activeRow, setActiveRow] = useState<number | null>(null);
 
-  const scroll = (direction: "left" | "right") => {
-    if (scrollContainerRef.current) {
-      const scrollAmount = 400;
+  const scroll = (rowIndex: number, direction: "left" | "right") => {
+    if (scrollContainers.current[rowIndex]) {
+      const scrollAmount = 300;
       const newScrollPosition =
         direction === "left"
-          ? scrollContainerRef.current.scrollLeft - scrollAmount
-          : scrollContainerRef.current.scrollLeft + scrollAmount;
+          ? scrollContainers.current[rowIndex]!.scrollLeft - scrollAmount
+          : scrollContainers.current[rowIndex]!.scrollLeft + scrollAmount;
 
-      scrollContainerRef.current.scrollTo({
+      scrollContainers.current[rowIndex]!.scrollTo({
         left: newScrollPosition,
         behavior: "smooth",
       });
     }
   };
+
+  const rows = [];
+  for (let i = 0; i < images.length; i += 3) {
+    rows.push(images.slice(i, i + 3));
+  }
 
   return (
     <section id="estilo" className="py-24 bg-with-pattern">
@@ -49,57 +59,91 @@ export default function PhotoStyle() {
           </h2>
         </div>
 
-        {/* Carousel Container */}
-        <div className="relative group/carousel">
-          {/* Left Arrow Button - Desktop/Tablet - Sempre visível */}
-          <button
-            onClick={() => scroll("left")}
-            className="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white/95 hover:bg-white text-[var(--color-brand-brownDark)] p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 items-center justify-center"
-            aria-label="Foto anterior"
-          >
-            <Icon icon="solar:alt-arrow-left-linear" width="28" />
-          </button>
-
-          {/* Right Arrow Button - Desktop/Tablet - Sempre visível */}
-          <button
-            onClick={() => scroll("right")}
-            className="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white/95 hover:bg-white text-[var(--color-brand-brownDark)] p-3 rounded-full shadow-lg transition-all duration-300 hover:scale-110 items-center justify-center"
-            aria-label="Próxima foto"
-          >
-            <Icon icon="solar:alt-arrow-right-linear" width="28" />
-          </button>
-
-          {/* Scrollable Container */}
-          <div
-            ref={scrollContainerRef}
-            className="flex gap-4 lg:gap-6 overflow-x-auto scroll-smooth pb-4 -mx-6 px-6 md:mx-0 md:px-0"
-            style={{
-              scrollbarWidth: "none",
-              msOverflowStyle: "none",
-              WebkitOverflowScrolling: "touch",
-            }}
-          >
-            {images.map((src, index) => (
-              <div
-                key={index}
-                className="flex-shrink-0 w-[240px] sm:w-[280px] md:w-[320px] lg:w-[360px] aspect-[3/4] overflow-hidden rounded-sm group/item"
-              >
-                <img
-                  src={src}
-                  loading="lazy"
-                  className="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500"
-                  alt={`Portfolio ${index + 1}`}
-                />
+        {/* Grid Layout - Desktop/Tablet, Carousel Layout - Mobile */}
+        <div className="space-y-6">
+          {rows.map((row, rowIndex) => (
+            <div key={rowIndex}>
+              {/* Desktop/Tablet: Grid Layout */}
+              <div className="hidden md:grid grid-cols-3 gap-4 lg:gap-6">
+                {row.map((src, imgIndex) => (
+                  <div
+                    key={imgIndex}
+                    className="w-full aspect-[3/4] overflow-hidden rounded-sm group/item"
+                  >
+                    <img
+                      src={src}
+                      loading="lazy"
+                      className="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500"
+                      alt={`Portfolio ${rowIndex * 3 + imgIndex + 1}`}
+                    />
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
 
-          {/* Scroll Indicator - Todas as versões */}
-          <div className="text-center mt-4 lg:opacity-0">
-            <p className="text-xs text-[var(--color-brand-brownRed)]/60 font-light">
-              ← Arraste para ver mais →
-            </p>
-          </div>
+              {/* Mobile: Carousel with Scroll */}
+              <div
+                className="md:hidden relative group/carousel"
+                onMouseEnter={() => setActiveRow(rowIndex)}
+                onMouseLeave={() => setActiveRow(null)}
+              >
+                {/* Left Arrow - Visible only on mobile when hovering */}
+                {activeRow === rowIndex && (
+                  <button
+                    onClick={() => scroll(rowIndex, "left")}
+                    className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white text-[var(--color-brand-brownDark)] p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110 items-center justify-center flex"
+                    aria-label="Foto anterior"
+                  >
+                    <Icon icon="solar:alt-arrow-left-linear" width="24" />
+                  </button>
+                )}
+
+                {/* Scrollable Container */}
+                <div
+                  ref={(el) => {
+                    if (el) scrollContainers.current[rowIndex] = el;
+                  }}
+                  className="flex gap-4 overflow-x-auto scroll-smooth pb-4"
+                  style={{
+                    scrollbarWidth: "none",
+                    msOverflowStyle: "none",
+                    WebkitOverflowScrolling: "touch",
+                  }}
+                >
+                  {row.map((src, imgIndex) => (
+                    <div
+                      key={imgIndex}
+                      className="flex-shrink-0 w-[200px] aspect-[3/4] overflow-hidden rounded-sm group/item"
+                    >
+                      <img
+                        src={src}
+                        loading="lazy"
+                        className="w-full h-full object-cover group-hover/item:scale-105 transition-transform duration-500"
+                        alt={`Portfolio ${rowIndex * 3 + imgIndex + 1}`}
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                {/* Right Arrow - Visible only on mobile when hovering */}
+                {activeRow === rowIndex && (
+                  <button
+                    onClick={() => scroll(rowIndex, "right")}
+                    className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-white/95 hover:bg-white text-[var(--color-brand-brownDark)] p-2 rounded-full shadow-lg transition-all duration-300 hover:scale-110 items-center justify-center flex"
+                    aria-label="Próxima foto"
+                  >
+                    <Icon icon="solar:alt-arrow-right-linear" width="24" />
+                  </button>
+                )}
+
+                {/* Scroll Indicator - Mobile Only */}
+                <div className="md:hidden text-center mt-3">
+                  <p className="text-xs text-[var(--color-brand-brownRed)]/60 font-light">
+                    ← Arraste para ver mais →
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 

@@ -73,7 +73,7 @@ export default function Header() {
           <a
             href="#depoimentos"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-[var(--color-brand-brownDark)] py-2 border-b border-[var(--color-brand-brownDark)]/5"
+            className="text---color-brand-brownDark)] py-2 border-b border-[var(--color-brand-brownDark)]/5"
           >
             Depoimentos
           </a>
@@ -81,7 +81,7 @@ export default function Header() {
             href="https://wa.me/5533987079816?text=Ol%C3%A1%20Karine!%20Quero%20conhecer%20mais%20seu%20trabalho%20e%20seu%20or%C3%A7amento%20de%20ensaios!"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-[var(--color-brand-terracottaDark)] font-medium py-2"
+            className="text-brand-brownDark py-2"
           >
             Agendar Agora
           </a>
