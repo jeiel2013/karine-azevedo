@@ -26,7 +26,7 @@ export default function Footer() {
 
         <div className="mt-12 flex flex-col items-center gap-4 text-[var(--color-brand-nude)]">
           <a
-            href="https://instagram.com/karineazevedofotografia"
+            href="https://instagram.com/karineazevedofotografia_"
             className="flex items-center gap-2 hover:text-white transition-colors"
           >
             <Icon icon="solar:camera-linear" width="20" />
