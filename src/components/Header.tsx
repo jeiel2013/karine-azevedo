@@ -73,7 +73,7 @@ export default function Header() {
           <a
             href="#depoimentos"
             onClick={() => setMobileMenuOpen(false)}
-            className="text---color-brand-brownDark)] py-2 border-b border-[var(--color-brand-brownDark)]/5"
+            className="text-[var(--color-brand-brownDark)] py-2 border-b border-[var(--color-brand-brownDark)]/5"
           >
             Depoimentos
           </a>

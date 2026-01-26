@@ -47,7 +47,7 @@ export default function Hero() {
           className="absolute min-w-full min-h-full w-auto h-auto left-[20%] top-[-10%] -translate-y-1/2"
         />
         {/* Overlay Desktop */}
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-brand-bg)]/95 from-20% via-[var(--color-brand-bg)]/65 via-30% to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-brand-bg)]/95 from-25% via-[var(--color-brand-bg)]/65 via-30% to-transparent"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-6 w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">

@@ -220,7 +220,7 @@ html {
 
 /* Selection */
 ::selection {
-  background-color: var(--color-brand-terracotta);
+  background-color: var(--color-brand-brownDark);
   color: white;
 }
 

@@ -15,7 +15,7 @@ export default function Footer() {
         </h2>
 
         <a
-          href="https://wa.me/5555339870798?text=Ol%C3%A1%20Karine!%20Quero%20agendar%20um%20ensaio%20com%20voc%C3%AA!"
+          href="https://wa.me/5533987079816?text=Ol%C3%A1%20Karine!%20Quero%20conhecer%20mais%20seu%20trabalho%20e%20seu%20or%C3%A7amento%20de%20ensaios!"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-3 bg-[var(--color-brand-terracotta)] text-(--color-brand-brownDark) px-10 py-5 rounded-full text-lg font-medium transition-all hover:scale-105 shadow-xl hover:shadow-2xl"
