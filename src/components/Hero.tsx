@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image - Mobile */}
       <div className="absolute inset-0 h-[115vh] z-0 md:hidden overflow-hidden">
         <img
-          src="/Hero1.webp"
+          src="/Hero1.jpg"
           alt="Background"
           className="absolute w-full h-full object-cover object-[center_90%]"
         />
@@ -31,7 +31,7 @@ export default function Hero() {
       {/* Background Image - 1024x768 / 1366x768 landscape */}
       <div className="absolute inset-y-0 right-[-35%] z-0 hidden lg:block xl:hidden overflow-hidden w-[135%]">
         <img
-          src="/Hero1.webp"
+          src="/Hero1.jpg"
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover object-[85%_90%]"
         />
@@ -42,7 +42,7 @@ export default function Hero() {
       {/* Background Image - Desktop (>1400px) */}
       <div className="absolute inset-0 z-0 hidden xl:block overflow-hidden">
         <img
-          src="/Hero1.webp"
+          src="/Hero1.jpg"
           alt="Background"
           className="absolute min-w-full min-h-full w-auto h-auto left-[20%] top-[-10%] -translate-y-1/2"
         />
