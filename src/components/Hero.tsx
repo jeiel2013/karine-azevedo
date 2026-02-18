@@ -9,7 +9,7 @@ export default function Hero() {
       {/* Background Image - Mobile */}
       <div className="absolute inset-0 h-[115vh] z-0 md:hidden overflow-hidden">
         <img
-          src="/Hero1.jpg"
+          src="/Hero1.webp"
           alt="Background"
           className="absolute w-full h-full object-cover object-[center_90%]"
         />
@@ -20,7 +20,7 @@ export default function Hero() {
       {/* Background Image - Tablet (768px - 1023px) */}
       <div className="absolute inset-0 z-0 hidden md:block lg:hidden overflow-hidden h-[110%]">
         <img
-          src="/Hero1.jpg"
+          src="/Hero1.webp"
           alt="Background"
           className="absolute w-full h-full object-cover object-[30%_75%]"
         />
