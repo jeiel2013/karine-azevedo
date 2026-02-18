@@ -32,13 +32,6 @@ export default function Footer() {
             <Icon icon="solar:camera-linear" width="20" />
             @karineazevedofotografia_
           </a>
-          <a
-            href="#"
-            className="flex items-center gap-2 hover:text-white transition-colors"
-          >
-            <Icon icon="solar:letter-linear" width="20" />
-            contato@karineazevedo.com
-          </a>
         </div>
 
         <div className="mt-16 pt-8 border-t border-white/10 text-[var(--color-brand-nude)] text-sm">
