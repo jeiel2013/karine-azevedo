@@ -18,7 +18,7 @@ export default function About() {
               {/* Main Image */}
               <div className="absolute inset-4 md:inset-6 lg:inset-8 rounded-t-full overflow-hidden shadow-2xl">
                 <img
-                  src="/fotoKarine1.webp"
+                  src="/fotoKarine1.jpeg"
                   loading="lazy"
                   alt="Karine Azevedo"
                   className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
